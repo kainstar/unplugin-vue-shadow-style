@@ -20,8 +20,6 @@ pnpm add vite-plugin-vue-shadow-style -D
 
 ### Config Bundler
 
-Now it only support `vite`, if you want to use other bundler, please waiting my development or send your PR.
-
 ```ts vite.config.ts
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
