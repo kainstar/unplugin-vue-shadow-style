@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig",
+  "compilerOptions": {
+    "rootDir": ".",
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Bundler"
+  },
+  "include": ["src", "src/**/*.vue"]
+}

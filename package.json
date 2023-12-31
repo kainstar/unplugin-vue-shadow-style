@@ -1,0 +1,87 @@
+{
+  "name": "vite-plugin-vue-shadow-style",
+  "version": "1.0.0",
+  "description": "Plugin to inject Vue setup SFC style to shadow root",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "cm": "cz",
+    "clean": "rimraf lib",
+    "lint": "eslint src",
+    "prepare": "is-ci || husky install",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kainstar/vite-plugin-vue-shadow-style.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Kainstar",
+    "email": "15249633+kainstar@users.noreply.github.com",
+    "url": "https://github.com/kainstar"
+  },
+  "engines": {
+    "node": ">=18.0"
+  },
+  "keywords": [
+    "vue",
+    "shadow-dom",
+    "style",
+    "vite",
+    "unplugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/kainstar/vite-plugin-vue-shadow-style/issues"
+  },
+  "homepage": "https://github.com/kainstar/vite-plugin-vue-shadow-style#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.2",
+    "husky": "^8.0.3",
+    "is-ci": "^3.0.1",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "semantic-release": "^22.0.12",
+    "slash": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}
